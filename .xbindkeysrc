@@ -1,0 +1,4 @@
+"amixer -c 0 set Master 1dB-"
+  XF86AudioLowerVolume
+"amixer -c 0 set Master 1dB+"
+  XF86AudioRaiseVolume

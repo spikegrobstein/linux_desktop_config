@@ -1,0 +1,7 @@
+xmodmap ~/.Xmodmap
+xrdb ~/.Xresources
+
+exec --no-startup-id xss-lock -- /home/spike/.config/i3/lock.sh
+
+syndaemon -t -d
+
