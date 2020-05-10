@@ -1,21 +1,21 @@
 # exec openbox-session
 
-# caps-lock as control and natural scrolling
-xmodmap ~/.Xmodmap
+# caps-lock as control re-map
+[[ -f ~/.Xmodmap ]] && xmodmap ~/.Xmodmap
 
 # set up terminal colourschemes
 xrdb ~/.Xresources
+#[[ -s ~/.Xresources ]] && xrdb -merge -I"$HOME" ~/.Xresources
 
 # set up the key repeat rate
 xset r rate 200 30
-
-# configure trackpad
-syndaemon -t -d
 
 # sync clipboards
 autocutsel -fork &
 autocutsel -selection PRIMARY -fork &
 
-dropbox &
+#dropbox &
 
+# start up i3 and write to the logfile
+# might want to not put the logfile right into the home directory
 exec i3 -V >> ~/i3.log 2>&1
