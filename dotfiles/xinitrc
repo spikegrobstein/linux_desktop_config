@@ -1,5 +1,3 @@
-# exec openbox-session
-
 # caps-lock as control re-map
 [[ -f ~/.Xmodmap ]] && xmodmap ~/.Xmodmap
 

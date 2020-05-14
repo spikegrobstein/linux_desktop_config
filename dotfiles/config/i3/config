@@ -32,7 +32,7 @@ font pango:Hack Regular 10
 floating_modifier $mod
 
 # force lock the screen
-bindsym ctrl+$mod+q exec i3lock
+bindsym ctrl+$mod+q exec /home/spike/.config/i3/lock.sh
 
 # start a terminal
 bindsym $mod+Return exec alacritty
@@ -187,3 +187,5 @@ bar {
 }
 
 exec xrandr --dpi 220
+#exec --no-startup-id xss-lock -- /home/spike/.config/i3/lock.sh
+
