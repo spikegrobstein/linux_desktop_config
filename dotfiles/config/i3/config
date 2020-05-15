@@ -43,7 +43,8 @@ bindsym $mod+Shift+q kill
 bindsym $mod+Shift+ctrl+3 exec scrot '/home/spike/Dropbox/Screenshots/%Y-%m-%d_$w$h.png'
 
 # start dmenu (a program launcher)
-bindsym $mod+space exec dmenu_run
+# bindsym $mod+space exec dmenu_run
+bindsym $mod+space exec /home/spike/c/linux_desktop_config/scripts/dmenu_run_r
 #bindsym $mod+space exec termite --class "fzf-menu" --geometry 640x480 -e /home/spike/poc/launcher/fzf-menu
 
 # for_window [class="^fzf-menu$"] floating enable
