@@ -3,10 +3,11 @@
 set -e
 xset s off dpms 0 10 0
 
-i3lock \
-  --color=4c7899 \
+/usr/bin/i3lock \
+  --color=000000 \
   --ignore-empty-password \
   --show-failed-attempts \
-  --nofork
+  -i /home/spike/c/linux_desktop_config/images/gilmore_isaora_ghostly.png
+
 xset s off -dpms
 
