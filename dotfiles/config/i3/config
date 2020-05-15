@@ -40,7 +40,7 @@ bindsym $mod+Return exec alacritty
 # kill focused window
 bindsym $mod+Shift+q kill
 
-bindsym $mod+Shift+ctrl+3 exec scrot '/home/spike/screenshots/%Y-%m-%d_$w$h.png'
+bindsym $mod+Shift+ctrl+3 exec scrot '/home/spike/Dropbox/Screenshots/%Y-%m-%d_$w$h.png'
 
 # start dmenu (a program launcher)
 bindsym $mod+space exec dmenu_run
