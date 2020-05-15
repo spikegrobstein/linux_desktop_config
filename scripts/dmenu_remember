@@ -1,0 +1,10 @@
+#! /bin/sh
+
+# take stdin, append it to the recent file and output it
+# this should be used in a dmenu chain to remember recent choices
+
+RECENT_FILE="${1:-$HOME/.dmenu.recent}"
+
+tee -a "$RECENT_FILE"
+
+

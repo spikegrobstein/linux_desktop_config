@@ -1,0 +1,15 @@
+#!/bin/sh
+
+# a special version of dmenu_run that remembers the most-recently used items
+# and shows them first when the menu first pops up
+
+RECENT_FILE="$HOME/.dmenu.recent"
+
+{
+  [[ -s "$RECENT_FILE" ]] && cat "$RECENT_FILE"
+  dmenu_path
+} \
+  | dmenu "$@" \
+  | ~/c/linux_desktop_config/scripts/dmenu_remember "$RECENT_FILE" \
+  | ${SHELL:-"/bin/sh"} &
+
