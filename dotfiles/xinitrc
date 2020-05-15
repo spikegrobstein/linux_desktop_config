@@ -16,4 +16,4 @@ autocutsel -selection PRIMARY -fork &
 
 # start up i3 and write to the logfile
 # might want to not put the logfile right into the home directory
-exec i3 -V >> ~/i3.log 2>&1
+exec i3 -V >> ~/.config/i3/i3.log 2>&1
