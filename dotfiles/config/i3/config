@@ -162,6 +162,16 @@ mode "resize" {
 
 bindsym $mod+Shift+w mode "move-workspace"
 mode "move-workspace" {
+  bindsym 1 move container to workspace 1; mode "default"
+  bindsym 2 move container to workspace 2; mode "default"
+  bindsym 3 move container to workspace 3; mode "default"
+  bindsym 4 move container to workspace 4; mode "default"
+  bindsym 5 move container to workspace 5; mode "default"
+  bindsym 6 move container to workspace 6; mode "default"
+  bindsym 7 move container to workspace 7; mode "default"
+  bindsym 8 move container to workspace 8; mode "default"
+  bindsym 9 move container to workspace 9; mode "default"
+
   bindsym l move container to workspace next; mode "default"
   bindsym h move container to workspace prev; mode "default"
 
