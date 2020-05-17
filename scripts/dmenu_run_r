@@ -10,6 +10,6 @@ RECENT_FILE="${1:-$HOME/.dmenu.recent}"
   dmenu_path
 } \
   | dmenu "$@" \
-  | ~/c/linux_desktop_config/scripts/dmenu_remember "$RECENT_FILE" \
+  | dmenu_recent \
   | ${SHELL:-"/bin/sh"} &
 
