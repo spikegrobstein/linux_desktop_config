@@ -186,6 +186,12 @@ mode "move-workspace" {
 
 bindsym $mod+b i3-msg border none
 
+# backlight keys.
+# make sure to chgrp +video and chmod g+w to /sys/class/backlight/intel_backlight/brightness
+# and install the 'light' package
+bindsym XF86MonBrightnessDown exec --no-startup-id light -U 10
+bindsym XF86MonBrightnessUp exec --no-startup-id light -A 10
+
 # bindsym $mod+t mode "foo"
 
 bindsym $mod+r mode "resize"
