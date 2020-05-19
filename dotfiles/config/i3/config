@@ -130,7 +130,8 @@ bindsym $mod+Shift+9 move container to workspace 9
 bindsym $mod+Shift+0 move container to workspace 10
 
 # reload the configuration file
-bindsym $mod+Shift+c reload
+#bindsym $mod+Shift+c reload
+bindsym XF86Tools reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
@@ -191,6 +192,10 @@ bindsym $mod+b i3-msg border none
 # and install the 'light' package
 bindsym XF86MonBrightnessDown exec --no-startup-id light -U 10
 bindsym XF86MonBrightnessUp exec --no-startup-id light -A 10
+
+bindsym XF86Favorites exec "i3-nagbar -m 'no fave'"
+bindsym XF86Bluetooth exec "i3-nagbar -m 'no BT'"
+bindsym XF86Display exec "i3-nagbar -m 'no diplay'"
 
 # bindsym $mod+t mode "foo"
 
