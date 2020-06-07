@@ -143,7 +143,7 @@ format-discharging-background = #330
 format-charging-padding = 1
 format-discharging-padding = 1
 
-ramp-capacity-0 = " "
+ramp-capacity-0 = "  !"
 ramp-capacity-1 = " "
 ramp-capacity-2 = " "
 ramp-capacity-3 = " "
