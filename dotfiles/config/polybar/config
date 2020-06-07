@@ -12,7 +12,7 @@ background = #000
 foreground = #fff
 
 modules-right = cpu wireless-network battery alsa date
-modules-left = i3
+modules-left = i3 spotify
 
 module-margin = 1
 ; separator = "|"
@@ -211,4 +211,37 @@ ramp-signal-2 = "[██   ]"
 ramp-signal-3 = "[███  ]"
 ramp-signal-4 = "[████ ]"
 ramp-signal-6 = "[█████]"
+
+;; Spotify support
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+; these don't quite work right.
+; [module/previous]
+; type = custom/text
+; content = "玲"
+; click-left = "/home/spke/.local/bin/spotify-polybar previous"
+
+
+; [module/next]
+; type = custom/text
+; content = "怜"
+
+; click-left = "/home/spke/.local/bin/spotify-polybar next"
+
+
+; [module/playpause]
+; type = custom/text
+; content = ""
+; click-left = "/home/spke/.local/bin/spotify-polybar playpause"
+
+
+[module/spotify]
+type = custom/script
+exec = "/home/spike/.local/bin/spotify-polybar status"
+interval = 5
+
+label = "  %output%"
+
+format-background = #030
+format-padding = 1
 
