@@ -193,6 +193,11 @@ bindsym $mod+b i3-msg border none
 bindsym XF86MonBrightnessDown exec --no-startup-id light -U 10
 bindsym XF86MonBrightnessUp exec --no-startup-id light -A 10
 
+# Pulse Audio controls
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% #increase sound volume
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5% #decrease sound volume
+bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
+
 bindsym XF86Favorites exec "i3-nagbar -m 'no fave'"
 bindsym XF86Bluetooth exec "i3-nagbar -m 'no BT'"
 bindsym XF86Display exec "i3-nagbar -m 'no diplay'"
