@@ -236,6 +236,7 @@ ramp-signal-6 = "[█████]"
 
 
 [module/spotify]
+; this uses https://github.com/spikegrobstein/spotify-polybar
 type = custom/script
 exec = "/home/spike/.local/bin/spotify-polybar status"
 interval = 5
