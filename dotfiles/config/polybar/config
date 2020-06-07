@@ -46,6 +46,11 @@ label-mode = %mode%
 label-mode-padding = 2
 label-mode-background = #aa0000
 
+label-urgent = %index%!
+label-urgent-foreground = #fff
+label-urgent-background = #600
+label-urgent-padding = 1
+
 [module/alsa]
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
