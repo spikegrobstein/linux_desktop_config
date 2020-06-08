@@ -216,7 +216,7 @@ accumulate-stats = true
 
 label-connected = %essid%
 label-disconnected = Disconnected
-format-connected =   <label-connected> <ramp-signal>
+format-connected =   <label-connected>  <ramp-signal>
 format-disconnected = <label-disconnected>
 
 format-connected-background = #030
@@ -225,12 +225,12 @@ format-disconnected-background = #300
 format-connected-padding = 1
 format-disconnected-padding = 1
 
-ramp-signal-0 = "[     ]"
-ramp-signal-1 = "[█    ]"
-ramp-signal-2 = "[██   ]"
-ramp-signal-3 = "[███  ]"
-ramp-signal-4 = "[████ ]"
-ramp-signal-6 = "[█████]"
+ramp-signal-0 = "     "
+ramp-signal-1 = "▁    "
+ramp-signal-2 = "▁▂   "
+ramp-signal-3 = "▁▂▄  "
+ramp-signal-4 = "▁▂▄▆ "
+ramp-signal-5 = "▁▂▄▆█"
 
 [module/spacer]
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
