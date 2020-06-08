@@ -66,19 +66,38 @@ master-mixer = Master
 format-volume-padding = 1
 
 format-volume =   <ramp-volume> <label-volume>
-label-volume = %percentage%%
+label-volume = %percentage:3%%
 
 label-muted = "ﱝ muted"
 label-muted-foreground = #66
 
-ramp-volume-0 = ▁
-ramp-volume-1 = ▂
-ramp-volume-2 = ▃
-ramp-volume-3 = ▄
-ramp-volume-4 = ▅
-ramp-volume-5 = ▆
-ramp-volume-6 = ▇
-ramp-volume-7 = █
+ramp-volume-0  = "   "
+ramp-volume-1  = "▏  "
+ramp-volume-2  = "▎  "
+ramp-volume-3  = "▍  "
+ramp-volume-4  = "▌  "
+ramp-volume-5  = "▋  "
+ramp-volume-6  = "▊  "
+ramp-volume-7  = "▉  "
+ramp-volume-8  = "█  "
+ramp-volume-9  = "█  "
+ramp-volume-10 = "█▏ "
+ramp-volume-11 = "█▎ "
+ramp-volume-12 = "█▍ "
+ramp-volume-13 = "█▌ "
+ramp-volume-14 = "█▋ "
+ramp-volume-15 = "█▊ "
+ramp-volume-16 = "█▉ "
+ramp-volume-17 = "██ "
+ramp-volume-18 = "██ "
+ramp-volume-19 = "██▏"
+ramp-volume-20 = "██▎"
+ramp-volume-21 = "██▍"
+ramp-volume-22 = "██▌"
+ramp-volume-23 = "██▋"
+ramp-volume-24 = "██▊"
+ramp-volume-25 = "██▉"
+ramp-volume-26 = "███"
 
 [module/cpu]
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
