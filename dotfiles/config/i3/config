@@ -41,6 +41,7 @@ bindsym $mod+Return exec alacritty
 bindsym $mod+Shift+q kill
 
 bindsym $mod+Shift+ctrl+3 exec scrot '/home/spike/Dropbox/Screenshots/%Y-%m-%d_$w$h.png'
+bindsym $mod+Shift+ctrl+4 exec /home/spike/.config/i3/screenshot.bash
 
 # start dmenu (a program launcher)
 # bindsym $mod+space exec dmenu_run
