@@ -12,9 +12,9 @@ background = #000
 foreground = #fff
 
 modules-right = cpu wireless-network battery alsa date
-modules-left = i3 spotify
+modules-left = i3 spacer spotify-logo previous playpause next spotify 
 
-module-margin = 1
+; module-margin = 1
 ; separator = "|"
 
 font-0 = hack nerd font:size=10;2
@@ -40,6 +40,7 @@ label-focused-underline = #fba922
 label-focused-padding = 1
 
 label-unfocused = %index%
+label-unfocused-background = #222
 label-unfocused-padding = 1
 
 label-mode = %mode%
@@ -212,36 +213,55 @@ ramp-signal-3 = "[███  ]"
 ramp-signal-4 = "[████ ]"
 ramp-signal-6 = "[█████]"
 
+[module/spacer]
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+type = custom/text
+content = " "
+content-padding = 1
+
 ;; Spotify support
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-; these don't quite work right.
-; [module/previous]
-; type = custom/text
-; content = "玲"
-; click-left = "/home/spke/.local/bin/spotify-polybar previous"
+[module/previous]
+type = custom/text
+content = "玲"
+click-left = "~/.local/bin/spotify-polybar previous"
+content-background = #020
+content-padding = 2
 
 
-; [module/next]
-; type = custom/text
-; content = "怜"
+[module/next]
+type = custom/text
+content = "怜"
 
-; click-left = "/home/spke/.local/bin/spotify-polybar next"
+click-left = "~/.local/bin/spotify-polybar next"
+content-background = #020
+content-padding = 2
 
 
-; [module/playpause]
-; type = custom/text
-; content = ""
-; click-left = "/home/spke/.local/bin/spotify-polybar playpause"
+[module/playpause]
+type = custom/text
+content = ""
+click-left = "~/.local/bin/spotify-polybar playpause"
+content-background = #020
+content-padding = 2
 
+[module/spotify-logo]
+; this uses https://github.com/spikegrobstein/spotify-polybar
+type = custom/text
+content = " "
+
+content-background = #030
+content-padding = 2
 
 [module/spotify]
 ; this uses https://github.com/spikegrobstein/spotify-polybar
 type = custom/script
-exec = "/home/spike/.local/bin/spotify-polybar status"
+exec = "~/.local/bin/spotify-polybar status"
 interval = 5
 
-label = "  %output%"
+label = "%output%"
 
 format-background = #030
 format-padding = 1
