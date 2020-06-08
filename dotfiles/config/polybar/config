@@ -109,7 +109,7 @@ type = internal/cpu
 interval = 0.5
 
 format = <label> <ramp-coreload>
-padding = 1
+format-padding = 1
 
 label = " "
 
