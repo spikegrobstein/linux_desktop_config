@@ -87,21 +87,38 @@ type = internal/cpu
 ; Default: 1
 interval = 0.5
 
-format = <label> <ramp-coreload>
+format = <label> |<ramp-coreload>|
 format-padding = 1
 
 label = " "
 
 ; Spacing between individual per-core ramps
 ramp-coreload-spacing = 0
-ramp-coreload-0 = ▁
-ramp-coreload-1 = ▂
-ramp-coreload-2 = ▃
-ramp-coreload-3 = ▄
-ramp-coreload-4 = ▅
-ramp-coreload-5 = ▆
-ramp-coreload-6 = ▇
-ramp-coreload-7 = █
+; ramp-coreload-0 = "▁"
+; ramp-coreload-1 = "%{F#ffc}▂%{F-}"
+; ramp-coreload-2 = "%{F#ffa}▃%{F-}"
+; ramp-coreload-3 = "%{F#ff8}▄%{F-}"
+; ramp-coreload-4 = "%{F#ff6}▅%{F-}"
+; ramp-coreload-5 = "%{F#ff4}▆%{F-}"
+; ramp-coreload-6 = "%{F#ff2}▇%{F-}"
+; ramp-coreload-7 = "%{F#ff0}█%{F-}"
+
+ramp-coreload-0 = "%{F#000}█%{F-}"
+ramp-coreload-1 = "%{F#111}█%{F-}"
+ramp-coreload-2 = "%{F#222}█%{F-}"
+ramp-coreload-3 = "%{F#333}█%{F-}"
+ramp-coreload-4 = "%{F#444}█%{F-}"
+ramp-coreload-5 = "%{F#555}█%{F-}"
+ramp-coreload-6 = "%{F#666}█%{F-}"
+ramp-coreload-7 = "%{F#777}█%{F-}"
+ramp-coreload-8 = "%{F#888}█%{F-}"
+ramp-coreload-9 = "%{F#999}█%{F-}"
+ramp-coreload-10 = "%{F#aaa}█%{F-}"
+ramp-coreload-11 = "%{F#bbb}█%{F-}"
+ramp-coreload-12 = "%{F#ccc}█%{F-}"
+ramp-coreload-13 = "%{F#ddd}█%{F-}"
+ramp-coreload-14 = "%{F#eee}█%{F-}"
+ramp-coreload-15 = "%{F#fff}█%{F-}"
 
 [module/battery]
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
