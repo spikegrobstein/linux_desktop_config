@@ -11,7 +11,7 @@ height = 30
 background = #000
 foreground = #fff
 
-modules-right = cpu wireless-network battery alsa date
+modules-right = cpu email wireless-network battery alsa date
 modules-left = i3 spacer spotify-logo previous playpause next spotify 
 
 ; module-margin = 1
@@ -281,3 +281,14 @@ label = "%output%"
 format-background = #030
 format-padding = 1
 
+[module/email]
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+type = custom/script
+exec = ~/c/linux_desktop_config/scripts/unread_email_count.sh
+
+interval = 60
+
+label = "  %output%"
+
+format-background = #003
+format-padding = 1
