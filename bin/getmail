@@ -1,0 +1,5 @@
+#! /usr/bin/env bash
+
+alacritty \
+  --title "neomutt" \
+  --command "neomutt"
