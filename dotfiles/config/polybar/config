@@ -274,7 +274,7 @@ content-padding = 2
 ; this uses https://github.com/spikegrobstein/spotify-polybar
 type = custom/script
 exec = "~/.local/bin/spotify-polybar status"
-interval = 5
+interval = 2
 
 label = "%output%"
 
