@@ -268,11 +268,13 @@ content-padding = 2
 
 
 [module/playpause]
-type = custom/text
-content = ""
+type = custom/script
+; content = ""
+exec = "~/.local/bin/spotify-polybar play-button --play '' --pause '' --disabled ''"
 click-left = "~/.local/bin/spotify-polybar playpause"
-content-background = #020
-content-padding = 2
+interval = 2
+format-background = #020
+format-padding = 2
 
 [module/spotify-logo]
 ; this uses https://github.com/spikegrobstein/spotify-polybar
