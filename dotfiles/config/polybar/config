@@ -11,7 +11,7 @@ height = 30
 background = #000
 foreground = #fff
 
-modules-right = cpu email wireless-network battery alsa date
+modules-right = cpu email wireless-network network-throughput battery alsa date
 modules-left = i3 spacer spotify-logo previous playpause next spotify 
 
 ; module-margin = 1
@@ -227,6 +227,18 @@ ramp-signal-2 = "▁▂%{F#333}▄▆█%{F-}"
 ramp-signal-3 = "▁▂▄%{F#333}▆█%{F-}"
 ramp-signal-4 = "▁▂▄▆%{F#333}█%{F-}"
 ramp-signal-5 = "▁▂▄▆█"
+
+[module/network-throughput]
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+type = internal/network
+interface = wlan0
+
+interval = 1.0
+
+label-connected = "歷 |  %upspeed:10%   %downspeed:10% |"
+
+format-connected-padding = 1
 
 [module/spacer]
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
