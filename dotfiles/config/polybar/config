@@ -68,7 +68,7 @@ format-volume-padding = 1
 format-volume =   <ramp-volume> <label-volume>
 label-volume = %percentage:3%%
 
-label-muted = "ﱝ muted"
+label-muted = " ﱝ muted "
 label-muted-foreground = #66
 
 ramp-volume-0 = "%{F#333}▁▂▄▆█%{F-}"
