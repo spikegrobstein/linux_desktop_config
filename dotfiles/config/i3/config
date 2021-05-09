@@ -28,6 +28,9 @@ font pango:Hack Nerd Font Regular 10
 # X core fonts rendering does not support right-to-left and this being a bitmap
 # font, it doesn’t scale on retina/hidpi displays.
 
+# the default layout so we don't need to manually do it
+workspace_layout tabbed
+
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
