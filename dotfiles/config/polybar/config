@@ -236,7 +236,9 @@ interface = wlan0
 
 interval = 1.0
 
-label-connected = "歷 | %{U#f00} %upspeed:10% %{U-} %{U#00f} %downspeed:10% %{U-}|"
+label-connected = "歷 | ▲%{U#f00} %upspeed:10% %{U-} ▼%{U#00f} %downspeed:10% %{U-}|"
+
+
 
 format-connected-padding = 1
 
