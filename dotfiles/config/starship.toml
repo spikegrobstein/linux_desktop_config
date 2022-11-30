@@ -15,7 +15,8 @@ format = '''
 [directory]
 
 truncation_length = 0
-format = '\[[$path](cyan)\]'
+format = '\[[$path]($style)\]'
+style = 'cyan'
 truncate_to_repo = false
 
 [username]
