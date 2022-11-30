@@ -1,0 +1,54 @@
+# Get editor completions based on the config schema
+"$schema" = 'https://starship.rs/config-schema.json'
+
+# Inserts a blank line between shell prompts
+add_newline = false
+
+# format = """
+# ┌─[(bold green)%n(reset)%{$reset_color%}%b][%{$fg[green]%}%m%{$reset_color%}]${git_branch}[%{$fg[cyan]%}%~%{$reset_color%}]
+# └─▪
+# """
+format = '''
+┌─$username$hostname$git_branch$git_status$git_state$directory
+└─▪ '''
+
+[directory]
+
+truncation_length = 2
+format = "\\[[$path](cyan)\\]"
+truncate_to_repo = false
+
+[username]
+
+style_user = "bold green"
+style_root = "bold red"
+format = '\[[$user]($style)\]'
+show_always = true
+
+[hostname]
+
+ssh_only = false
+format = '\[[$ssh_symbol$hostname]($style)\]'
+style = "green"
+
+[git_branch]
+
+symbol = '\[[±](bold green)\]'
+format = '$symbol\[$branch'
+
+[git_status]
+
+up_to_date = ""
+deleted = "[✘](red)"
+stashed = ""
+modified = "[◆](red)"
+renamed = "[»](bold blue)"
+untracked = '' #"[?](bold blue)"
+staged = "[+](green)"
+
+format = '( $all_status$ahead_behind)\]'
+
+[git_state]
+
+format = '{[$state( $progress_current/$progress_total)]($style)}'
+
